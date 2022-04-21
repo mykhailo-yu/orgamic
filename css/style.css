@@ -426,7 +426,7 @@ header .header-bottom-right .header-buttons .cart .counter {
 }
 .block-categories .item {
   width: 270px;
-  border: 1px solid #76A713;
+  border: 1px solid #76a713;
   padding: 23px 23px 30px;
   transition: all ease 0.2s;
   text-align: center;
@@ -439,14 +439,14 @@ header .header-bottom-right .header-buttons .cart .counter {
   height: 100%;
 }
 .block-categories .item .t1 {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-weight: 500;
   font-size: 30px;
   line-height: 44px;
   color: #000000;
 }
 .block-categories .item .t2 {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -456,14 +456,14 @@ header .header-bottom-right .header-buttons .cart .counter {
 .block-categories .item .t3 {
   min-width: 40px;
   height: 40px;
-  border: 1px solid #76A713;
+  border: 1px solid #76a713;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 700;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 auto;
 }
 .block-categories .item .t3 span {
@@ -471,14 +471,14 @@ header .header-bottom-right .header-buttons .cart .counter {
   padding: 0 18px;
 }
 .block-categories .item:hover {
-  border-color: #DDDDDD;
-  background: #FFFFFF;
+  border-color: #dddddd;
+  background: #ffffff;
 }
 .block-categories .item:hover .t1 {
-  color: #76A713;
+  color: #76a713;
 }
 .block-categories .item:hover .t3 {
-  background-color: #76A713;
+  background-color: #76a713;
   transition: all ease 0.2s;
 }
 .block-categories .item:hover .t3 img {
@@ -491,7 +491,7 @@ header .header-bottom-right .header-buttons .cart .counter {
   background-color: #3d5a02;
 }
 .sec3 {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 100px 0;
 }
 .banners {
@@ -518,14 +518,14 @@ header .header-bottom-right .header-buttons .cart .counter {
   text-align: right;
 }
 .banners .banner .txt .t1 {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
 }
 .banners .banner .txt .t2 {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-weight: 600;
   font-size: 40px;
 }
@@ -533,15 +533,16 @@ header .header-bottom-right .header-buttons .cart .counter {
   background-color: #76a713;
 }
 .banners .banner.bg-green .txt a {
-  background-color: #FF6600;
+  background-color: #ff6600;
 }
 .banners .banner.bg-orange {
-  background-color: #FF6600;
+  background-color: #ff6600;
 }
 .banners .banner.bg-orange .txt a {
-  background-color: #76A713;
+  background-color: #76a713;
 }
 .block-btns {
+  margin-bottom: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,6 +550,7 @@ header .header-bottom-right .header-buttons .cart .counter {
 .block-btns button {
   background: #ebebeb;
   padding: 4px 17px;
+  font-family: "Gilroy";
   font-weight: 500;
   font-size: 14px;
   color: #000000;
@@ -568,6 +570,7 @@ header .header-bottom-right .header-buttons .cart .counter {
 .product-card {
   width: 370px;
   position: relative;
+  transition: all ease 0.2s;
 }
 .product-card .offer {
   background: #ff6600;
@@ -598,6 +601,9 @@ header .header-bottom-right .header-buttons .cart .counter {
 .product-card .hover-btns button:not(:last-child) {
   margin-bottom: 10px;
 }
+.product-card:hover {
+  box-shadow: 0px 20px 50px 2px rgba(0, 0, 0, 0.1);
+}
 .product-card:hover .img {
   border-color: #76a713;
   border-width: 2px;
@@ -610,14 +616,14 @@ header .header-bottom-right .header-buttons .cart .counter {
   align-items: center;
   justify-content: center;
   height: 340px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   border-bottom: none;
 }
 .product-card .img img {
-  max-width: 85%;
+  max-width: 90%;
 }
 .product-card .txt {
-  background: #F8F8F8;
+  background: #f8f8f8;
   padding: 24px 0 30px;
   text-align: center;
 }
@@ -628,10 +634,11 @@ header .header-bottom-right .header-buttons .cart .counter {
   color: #000000;
 }
 .product-card .txt .price {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 600;
   font-size: 16px;
-  color: #76A713;
+  color: #76a713;
+  margin: 10px 0;
 }
 .product-card .txt .price span {
   font-size: 14px;
@@ -640,13 +647,17 @@ header .header-bottom-right .header-buttons .cart .counter {
 }
 .product-card .txt button {
   background: #76a713;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 17px;
   display: inline-block;
+  margin-top: 30px;
+}
+.sec4 {
+  padding: 77px 0 100px;
 }
 h2.title {
   font-family: "Oswald";
@@ -657,14 +668,70 @@ h2.title {
   margin-bottom: 42px;
   color: #191d28;
 }
+.sec6 {
+  padding-top: 77px;
+}
+.sec6 .bgblock {
+  background-color: #76a713;
+  background-image: url(../img/bgbl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding: 56px 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.sec6 .bgblock .item {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+.sec6 .bgblock .item b {
+  display: block;
+  margin-bottom: 10px;
+}
+.sec6 .bgblock .item span {
+  display: block;
+  font-family: "Gilroy", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.sec8 {
+  padding: 77px 0 100px;
+}
+.blog-articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .article {
   width: 370px;
 }
+.article:hover {
+  box-shadow: 0px 16px 45px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.article:hover .txt h3 a {
+  color: #76a713;
+}
 .article .img {
   height: 250px;
+  position: relative;
+}
+.article .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .article .txt {
   padding: 30px 20px;
+  border: 1px solid #dddddd;
+  border-top: none;
 }
 .article .txt .admin {
   display: flex;
@@ -672,15 +739,23 @@ h2.title {
   align-items: center;
 }
 .article .txt .admin a {
+  font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 11px;
   color: #000000;
+}
+.article .txt .admin a img {
+  margin-right: 9px;
 }
 .article .txt h3 {
   margin: 19px 0;
 }
 .article .txt h3 a {
   font-family: "Oswald";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%;
+  color: #000000;
 }
 .article .txt .foot {
   border-top: 1px solid #dddddd;
@@ -700,7 +775,14 @@ h2.title {
   margin-right: 9px;
 }
 .article .txt .foot a {
+  font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 150%;
+  color: #76a713;
+  display: flex;
+  align-items: center;
+}
+.article .txt .foot a svg {
+  margin-left: 5px;
 }
