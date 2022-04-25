@@ -544,12 +544,20 @@ header .header-bottom-right .header-buttons .cart .counter {
 }
 .banners .banner.bg-green .txt a {
   background-color: #ff6600;
+  transition: all ease 0.2s;
+}
+.banners .banner.bg-green .txt a:hover {
+  background-color: #da5700;
 }
 .banners .banner.bg-orange {
   background-color: #ff6600;
 }
 .banners .banner.bg-orange .txt a {
   background-color: #76a713;
+  transition: all ease 0.2s;
+}
+.banners .banner.bg-orange .txt a:hover {
+  background-color: #55790f;
 }
 .block-btns {
   margin-bottom: 35px;
@@ -578,7 +586,7 @@ header .header-bottom-right .header-buttons .cart .counter {
   gap: 30px;
 }
 .product-card {
-  width: 370px;
+  width: 370px !important;
   position: relative;
   transition: all ease 0.2s;
 }
@@ -681,13 +689,44 @@ h2.title {
 .sec6 {
   padding-top: 77px;
 }
+.sec6 .block-products {
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.sec6 .s6-swiper {
+  padding-bottom: 70px;
+}
+.sec6 .s6-swiper-buttons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.sec6 .s6-swiper-button {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #76a713;
+  padding: 5px 1px 15px 12px;
+  transition: all ease 0.2s;
+}
+.sec6 .s6-swiper-button:hover {
+  background-color: #76a713;
+  cursor: pointer;
+}
+.sec6 .s6-swiper-button:hover svg path {
+  fill: white;
+}
 .sec6 .bgblock {
+  transform: translateY(95px);
   background-color: #76a713;
   background-image: url(../img/bgbl.png);
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 100px;
-  padding: 56px 64px;
+  padding: 75px 64px 95px;
   display: flex;
   justify-content: space-between;
 }
@@ -707,6 +746,112 @@ h2.title {
   font-family: "Gilroy", sans-serif;
   font-size: 24px;
   font-weight: 600;
+}
+.sec7 {
+  position: relative;
+  height: 740px;
+  display: flex;
+}
+.sec7 .container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.sec7 .img {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 540px;
+}
+.sec7 .img::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  left: -500px;
+  top: -5px;
+  background: #ff6600;
+}
+.sec7 .img img {
+  position: absolute;
+  top: 94px;
+  left: 35px;
+}
+.sec7 .img .rotated_text {
+  position: relative;
+  top: 197px;
+  left: -200px;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 90px;
+  -webkit-text-stroke: 4px #ff812e;
+  transform: rotate(-90deg);
+  color: transparent;
+}
+.sec7 .s7-swiper {
+  position: relative;
+  margin: 270px 0 70px;
+  width: 570px;
+  height: 400px;
+  background: #ffffff;
+  box-shadow: 6px 16px 40px rgba(0, 0, 0, 0.07);
+}
+.sec7 .s7-swiper .swiper-slide {
+  text-align: center;
+  padding: 60px 37px;
+}
+.sec7 .s7-swiper .swiper-slide .t1 {
+  position: relative;
+  font-family: "Gilroy";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 170%;
+  color: #aaaaaa;
+}
+.sec7 .s7-swiper .swiper-slide .t1::before {
+  content: url(../img/Quote1.svg);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec7 .s7-swiper .swiper-slide .client {
+  margin: 30px 0;
+}
+.sec7 .s7-swiper .swiper-slide .client_name {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 8px;
+}
+.sec7 .s7-swiper .swiper-slide .client_position {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 11px;
+  color: #888888;
+}
+.sec7 .s7-swiper .swiper-pagination-bullets {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+}
+.sec7 .s7-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+}
+.sec7 .s7-swiper .swiper-pagination-bullet-active {
+  background-color: #76a713;
+}
+.sec7::after {
+  content: "";
+  position: absolute;
+  width: 485px;
+  height: 100%;
+  background: rgba(118, 167, 19, 0.3);
+  top: 0;
+  right: 0;
 }
 .sec8 {
   padding: 77px 0 250px;
@@ -803,6 +948,7 @@ h2.title {
   transform: translateY(-50%);
 }
 .footer_main {
+  margin-bottom: 60px;
   display: flex;
 }
 .footer_main .t1 {
@@ -926,6 +1072,15 @@ h2.title {
   font-weight: 500;
   font-size: 18px;
   color: #ffffff;
+}
+.footer_bottom {
+  text-align: center;
+  padding: 27px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+  color: #cccccc;
 }
 .subscribe_block {
   position: relative;

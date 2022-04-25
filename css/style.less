@@ -565,6 +565,10 @@ header {
       .txt {
         a {
           background-color: #ff6600;
+          .anim;
+          &:hover {
+            background-color: #da5700;
+          }
         }
       }
     }
@@ -573,6 +577,10 @@ header {
       .txt {
         a {
           background-color: #76a713;
+          .anim;
+          &:hover {
+            background-color: #55790f;
+          }
         }
       }
     }
@@ -605,7 +613,7 @@ header {
   gap: 30px;
 }
 .product-card {
-  width: 370px;
+  width: 370px !important;
   position: relative;
   .anim;
   .offer {
@@ -705,13 +713,46 @@ h2.title {
 
 .sec6 {
   padding-top: 77px;
+  .block-products {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .s6-swiper {
+    padding-bottom: 70px;
+  }
+  .s6-swiper-buttons {
+    .df;
+    gap: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .s6-swiper-button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #76a713;
+    padding: 5px 1px 15px 12px;
+    .anim;
+    &:hover {
+      background-color: #76a713;
+      cursor: pointer;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
   .bgblock {
+    transform: translateY(95px);
     background-color: #76a713;
     background-image: url(../img/bgbl.png);
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 100px;
-    padding: 56px 64px;
+    padding: 75px 64px 95px;
     .df;
     .jb;
     .item {
@@ -735,6 +776,113 @@ h2.title {
 }
 
 .sec7 {
+  position: relative;
+
+  height: 740px;
+  .df;
+  .container {
+    position: relative;
+    .df;
+    justify-content: flex-end;
+  }
+  .img {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 540px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 100%;
+      left: -500px;
+      top: -5px;
+      background: #ff6600;
+    }
+    img {
+      position: absolute;
+      top: 94px;
+      left: 35px;
+    }
+    .rotated_text {
+      position: relative;
+      top: 197px;
+      left: -200px;
+      font-family: Oswald;
+      font-weight: 500;
+      font-size: 90px;
+      -webkit-text-stroke: 4px #ff812e;
+      transform: rotate(-90deg);
+      color: transparent;
+    }
+  }
+  .s7-swiper {
+    position: relative;
+    margin: 270px 0 70px;
+    width: 570px;
+    height: 400px;
+    background: #ffffff;
+    box-shadow: 6px 16px 40px rgba(0, 0, 0, 0.07);
+    .swiper-slide {
+      .center;
+      padding: 60px 37px;
+      .t1 {
+        position: relative;
+        font-family: "Gilroy";
+        font-style: italic;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 170%;
+        color: #aaaaaa;
+        &::before {
+          content: url(../img/Quote1.svg);
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .client {
+        margin: 30px 0;
+        &_img {
+        }
+        &_name {
+          font-family: "Oswald";
+          font-weight: 500;
+          font-size: 16px;
+          color: #000000;
+          margin-top: 8px;
+        }
+        &_position {
+          font-family: "Gilroy";
+          font-weight: 500;
+          font-size: 11px;
+          color: #888888;
+        }
+      }
+    }
+    .swiper-pagination-bullets {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+    }
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      &-active {
+        background-color: #76a713;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 485px;
+    height: 100%;
+    background: rgba(118, 167, 19, 0.3);
+    top: 0;
+    right: 0;
+  }
 }
 
 .sec8 {
@@ -830,6 +978,7 @@ h2.title {
     transform: translateY(-50%);
   }
   &_main {
+    margin-bottom: 60px;
     .df;
     .t1 {
       font-family: "Oswald";
@@ -961,6 +1110,15 @@ h2.title {
         }
       }
     }
+  }
+  &_bottom {
+    .center;
+    padding: 27px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 16px;
+    color: #cccccc;
   }
 }
 .subscribe_block {
