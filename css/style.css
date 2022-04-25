@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 *:focus-visible {
   outline: -webkit-focus-ring-color auto 0px;
@@ -516,18 +517,27 @@ header .header-bottom-right .header-buttons .cart .counter {
   flex-direction: column;
   justify-content: center;
   text-align: right;
+  width: 247px;
 }
 .banners .banner .txt .t1 {
   font-family: "Gilroy";
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
   text-transform: uppercase;
 }
 .banners .banner .txt .t2 {
   font-family: "Oswald";
   font-weight: 600;
   font-size: 40px;
+  line-height: 59px;
+  margin: 12px 0;
+}
+.banners .banner .txt a {
+  padding: 10px 18px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  align-self: flex-end;
+  color: white;
 }
 .banners .banner.bg-green {
   background-color: #76a713;
@@ -699,7 +709,7 @@ h2.title {
   font-weight: 600;
 }
 .sec8 {
-  padding: 77px 0 100px;
+  padding: 77px 0 250px;
 }
 .blog-articles {
   display: flex;
@@ -785,4 +795,207 @@ h2.title {
 }
 .article .txt .foot a svg {
   margin-left: 5px;
+}
+.footer {
+  background: #191d28;
+}
+.footer_subscribe_block {
+  transform: translateY(-50%);
+}
+.footer_main {
+  display: flex;
+}
+.footer_main .t1 {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+.footer_main .left {
+  display: flex;
+  gap: 30px;
+  margin-right: 200px;
+}
+.footer_main .left .about .logo {
+  margin-bottom: 30px;
+}
+.footer_main .left .about_txt {
+  width: 270px;
+  margin-bottom: 30px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cccccc;
+}
+.footer_main .left .about .social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer_main .left .about .social a {
+  transition: all ease 0.2s;
+}
+.footer_main .left .about .social a:hover svg path {
+  fill: #76a713;
+}
+.footer_main .left .links li {
+  margin-bottom: 15px;
+}
+.footer_main .left .links li a {
+  position: relative;
+  padding-left: 15px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all ease 0.2s;
+}
+.footer_main .left .links li a::before {
+  position: absolute;
+  content: url(../img/dot.svg);
+  left: 0px;
+  top: -3px;
+}
+.footer_main .left .links li a:hover {
+  color: #76a713;
+}
+.footer_main .right {
+  display: flex;
+}
+.footer_main .right .blog_posts {
+  margin-right: 30px;
+}
+.footer_main .right .blog_posts ul li a {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.footer_main .right .blog_posts ul li a .title {
+  width: 184px;
+  height: 46px;
+  overflow: hidden;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.footer_main .right .blog_posts ul li a .date {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 13px;
+  color: #cccccc;
+}
+.footer_main .right .blog_posts ul li a .img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+.footer_main .right .blog_posts ul li a .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer_main .right .contacts {
+  width: 188px;
+}
+.footer_main .right .contacts a,
+.footer_main .right .contacts p {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cccccc;
+}
+.footer_main .right .contacts_info a {
+  display: block;
+  margin-bottom: 22px;
+}
+.footer_main .right .contacts_info a svg {
+  margin-right: 5px;
+}
+.footer_main .right .contacts_hours h4 {
+  margin-bottom: 15px;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+.subscribe_block {
+  position: relative;
+  min-height: 250px;
+  background: #76a713;
+  padding: 47px 102px 46px 0;
+}
+.subscribe_block .img {
+  position: absolute;
+  left: -60px;
+  top: -120px;
+  width: 451px;
+  height: 451px;
+}
+.subscribe_block .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subscribe_block .txt {
+  position: relative;
+  width: 560px;
+  margin-left: auto;
+}
+.subscribe_block .txt .t1 {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 60px;
+  color: #ffffff;
+}
+.subscribe_block .txt .subscription_form {
+  margin-top: 25px;
+  display: flex;
+}
+.subscribe_block .txt .subscription_form input {
+  flex-grow: 1;
+  padding: 10px 0;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #9ad523;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe_block .txt .subscription_form input::placeholder {
+  transition: all ease 0.2s;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe_block .txt .subscription_form input:focus::placeholder {
+  transform: translate(-100%, 0px);
+}
+.subscribe_block .txt .subscription_form button {
+  padding: 12px 10px;
+  margin-left: 48px;
+  background: #ff6600;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  transition: all ease 0.2s;
+}
+.subscribe_block .txt .subscription_form button:hover {
+  background: #d15400;
+}
+.subscribe_block .txt::before {
+  content: url(../img/subscr_before.svg);
+  position: absolute;
+  left: -80px;
+  top: 75px;
 }
