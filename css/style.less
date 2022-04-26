@@ -210,6 +210,7 @@ header {
     position: relative;
   }
   .t1 {
+    margin-bottom: 26px;
     .df;
     flex-direction: column-reverse;
     font-family: Oswald;
@@ -229,7 +230,6 @@ header {
     }
   }
   .t2 {
-    margin-top: 26px;
     font-family: Gilroy;
     font-weight: bold;
     font-size: 16px;
@@ -354,9 +354,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        img {
-          //margin-bottom: 30px;
-        }
+
         .tt1 {
           padding: 8px 60px;
           border: 1.5px dashed rgba(118, 167, 19, 0.5);
@@ -613,7 +611,7 @@ header {
   gap: 30px;
 }
 .product-card {
-  width: 370px !important;
+  width: 370px;
   position: relative;
   .anim;
   .offer {
@@ -844,8 +842,6 @@ h2.title {
       }
       .client {
         margin: 30px 0;
-        &_img {
-        }
         &_name {
           font-family: "Oswald";
           font-weight: 500;
@@ -1191,5 +1187,316 @@ h2.title {
       left: -80px;
       top: 75px;
     }
+  }
+}
+@media (min-width: 1170px) {
+}
+@media (min-width: 992px) and (max-width: 1169px) {
+  .container {
+    max-width: 980px;
+  }
+
+  header,
+  footer,
+  section,
+  body {
+    width: 100%;
+    //overflow: hidden visible;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    &_main {
+      .fc;
+    }
+  }
+  .container {
+    max-width: 750px;
+  }
+
+  header,
+  footer,
+  section,
+  body {
+    width: 100%;
+    //overflow: hidden visible;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+}
+@media (max-width: 767px) {
+  h2.title {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  header {
+    .header-top {
+      text-align: center;
+      .block {
+        .fc;
+        .contacts a {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      .social {
+        flex-direction: column-reverse;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+    .header-bottom {
+      .center;
+      .block {
+        .fc;
+        .nav-links {
+          .fc;
+          margin: 0;
+          gap: 0;
+        }
+      }
+      &-right {
+        .fc;
+        gap: 10px;
+      }
+    }
+  }
+  .sec1 {
+    padding: 20px 0 400px;
+    .s1swiper {
+      padding-bottom: 15px;
+      &-buttons {
+        top: calc(100% + 10px);
+      }
+      &-button {
+        &-prev {
+          left: 115px;
+        }
+        &-next {
+          right: 115px;
+        }
+      }
+    }
+    .swiper-slide {
+      .tt1 {
+        font-size: 54px;
+        line-height: 60px;
+      }
+      .tt2 {
+        font-size: 36px;
+      }
+      img {
+        width: 220px;
+        top: 118px;
+        left: -83px;
+      }
+      .t2 {
+        max-width: 150px;
+        display: flex;
+        transform: translateX(85px);
+        padding: 15px 30px;
+      }
+      .text-rotate {
+        display: none;
+      }
+    }
+  }
+  .sec2 {
+    margin-bottom: 20px;
+    &-top {
+      .fc;
+      margin: 20px 0;
+      padding: 0;
+      .item {
+        .fc;
+        padding: 30px 0;
+        .center;
+        .img {
+          margin: 0;
+        }
+        &:not(:last-child) {
+          border-right: none;
+          border-bottom: 1px solid #dddddd;
+        }
+      }
+    }
+    &-main {
+      margin-top: -300px;
+      padding-bottom: 5px;
+      .fc;
+      .left {
+        .fc;
+        .t1 {
+          display: none;
+        }
+        .tt1 {
+          margin-top: 10px;
+        }
+      }
+      .right {
+        margin-top: 20px;
+        .t1 {
+          text-align: center;
+          line-height: 65px;
+          font-size: 50px;
+        }
+        .t2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .sec3 {
+    padding: 40px 0;
+  }
+  .block-categories {
+    justify-content: center;
+    gap: 20px;
+  }
+  .block-btns {
+    flex-wrap: wrap;
+    gap: 10px;
+    button {
+      margin: 0;
+      padding: 8px 18px;
+      font-size: 16px;
+    }
+  }
+  .product-card {
+    width: 320px;
+    .img {
+      height: 270px;
+    }
+    .txt {
+      padding: 15px 0 20px;
+      button {
+        margin-top: 15px;
+      }
+    }
+  }
+  .sec4 {
+    padding: 25px 0 70px;
+  }
+  .banners {
+    .fc;
+    .banner {
+      width: 100%;
+      height: 260px;
+      padding-right: 30px;
+      img {
+        width: 180px;
+      }
+      .t2 {
+        font-size: 37px;
+        line-height: 50px;
+      }
+    }
+  }
+  .sec6 {
+    .bgblock {
+      margin-top: -190px;
+      .fc;
+      transform: translateY(50%);
+      padding: 30px 0;
+      .item {
+        b {
+          font-size: 45px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .sec7 {
+    height: 730px;
+    background: rgba(118, 167, 19, 0.3);
+    .img {
+      display: none;
+    }
+    .s7-swiper {
+      margin-top: 270px;
+      .swiper-slide {
+        padding: 35px 30px;
+      }
+      .swiper-pagination-bullets {
+        bottom: 35px;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .footer {
+    &_main {
+      margin-top: -140px;
+      .fc;
+      .t1 {
+        .center;
+      }
+      .left {
+        .center;
+        .fc;
+        align-items: center;
+        margin-right: 0;
+        .social {
+          justify-content: center;
+        }
+      }
+      .right {
+        .fc;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+    &-bottom {
+      padding: 20px 0;
+      .container {
+        line-height: 25px;
+      }
+    }
+  }
+  .subscribe_block {
+    padding: 115px 30px 30px;
+    .df;
+    justify-content: center;
+    .img {
+      width: 150px;
+      height: auto;
+      left: 80px;
+      top: 0px;
+    }
+    .txt {
+      width: 100%;
+      &::before {
+        display: none;
+      }
+      .t1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      .subscription_form {
+        .df;
+        .fc;
+        gap: 10px;
+        margin-top: 10px;
+        button {
+          margin: 0 auto;
+          padding: 20px 10px;
+          width: 150px;
+        }
+      }
+    }
+  }
+  .container {
+    max-width: 320px;
+  }
+
+  header,
+  footer,
+  section,
+  body {
+    width: 100%;
+    //overflow: hidden visible;
   }
 }

@@ -259,7 +259,7 @@
                       <h1 class="tt1">Organic Food Good Health</h1>
                       <h2 class="tt2">Body Needs</h2>
                     </div>
-                    <button class="t2">SHOP NOW</button>
+                    <a class="t2">SHOP NOW</a>
                   </div>
                   <div class="block-right">
                     <img src="img/sec1.png" alt="" />
@@ -1980,7 +1980,9 @@
           </div>
         </div>
         <div class="footer_bottom">
-          Copyright © 2021, Orgamic. All Rights Reserved.
+          <div class="container">
+            Copyright © 2021, Orgamic. All Rights Reserved.
+          </div>
         </div>
       </footer>
     </div>
@@ -2004,6 +2006,22 @@
         navigation: {
           nextEl: ".s6-swiper-button-next",
           prevEl: ".s6-swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          // 480: {
+          //   slidesPerView: 3,
+          //   spaceBetween: 30,
+          // },
+          // // when window width is >= 640px
+          // 640: {
+          //   slidesPerView: 4,
+          //   spaceBetween: 40,
+          // },
         },
       });
       const swiper7 = new Swiper(".s7-swiper", {
