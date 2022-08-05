@@ -352,8 +352,12 @@ header .header-bottom-right .header-buttons .cart .counter {
   display: flex;
   gap: 30px;
 }
+.sec2-main .left .t1 {
+  width: 271px;
+}
 .sec2-main .left .t1 img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .sec2-main .left .t2 {
@@ -361,8 +365,13 @@ header .header-bottom-right .header-buttons .cart .counter {
   flex-direction: column;
   justify-content: space-between;
 }
+.sec2-main .left .t2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .sec2-main .left .t2 .tt1 {
-  padding: 8px 60px;
+  padding: 8px 22px;
   border: 1.5px dashed rgba(118, 167, 19, 0.5);
   text-align: center;
   font-weight: 600;
@@ -374,6 +383,9 @@ header .header-bottom-right .header-buttons .cart .counter {
 .sec2-main .left .t2 .tt1_big {
   font-size: 30px;
   line-height: 44px;
+}
+.sec2-main .right {
+  flex: 0 1 50%;
 }
 .sec2-main .right .t1 {
   font-weight: 500;
@@ -1568,6 +1580,35 @@ body {
   header .header-bottom .nav-links a {
     font-size: 18px;
   }
+  .sec1 {
+    padding-bottom: 240px;
+  }
+  .sec1 .block {
+    width: 660px;
+    margin: 0 auto;
+  }
+  .sec1 .block-left {
+    margin-bottom: 15px;
+  }
+  .sec1 .block-right img {
+    width: 320px;
+    top: 105px;
+    left: -10px;
+  }
+  .sec1 .t1 .tt1 {
+    font-size: 72px;
+    line-height: 95px;
+  }
+  .sec1 .t1 .tt2 {
+    font-size: 39px;
+    line-height: 60px;
+  }
+  .sec1 .s1swiper-button-prev {
+    left: -7%;
+  }
+  .sec1 .s1swiper-button-next {
+    right: -7%;
+  }
   .sec2-top {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1588,17 +1629,48 @@ body {
     border-right: 1px solid #dddddd;
   }
   .sec2-main {
+    margin-top: -130px;
+  }
+  .sec2-main .left {
     flex-direction: column;
+    gap: 20px;
+  }
+  .sec2-main .left .t1 {
+    height: 100px;
+  }
+  .sec2-main .left .t2 {
+    gap: 20px;
+  }
+  .sec2-main .left .t2 .img {
+    height: 200px;
+  }
+  .sec2-main .right {
+    flex: 1 0 50%;
+  }
+  .sec2-main .right .t1 {
+    font-size: 50px;
+    line-height: 70px;
+    transform: translateY(-17px);
   }
   .block-categories {
     justify-content: space-evenly;
-    gap: 20px 0;
+    gap: 30px 0;
   }
   .block-products {
     gap: 10px;
   }
   .blog-articles {
+    justify-content: space-evenly;
     gap: 10px;
+  }
+  .banners .banner {
+    height: 265px;
+  }
+  .banners .banner img {
+    width: 230px;
+  }
+  .banners .banner .t2 {
+    z-index: 1;
   }
   .footer_main {
     margin-top: -75px;
@@ -1649,8 +1721,111 @@ body {
     overflow-x: hidden;
   }
 }
-@media (min-width: 992px) and (max-width: 1169px) {
+@media (min-width: 992px) and (max-width: 1320px) {
   .container {
-    max-width: 980px;
+    max-width: 900px;
+  }
+  .sec1 .block-left {
+    margin-bottom: 15px;
+  }
+  .sec1 .block-right img {
+    width: 550px;
+    top: 77px;
+    left: -10px;
+  }
+  .sec1 .t1 .tt1 {
+    font-size: 72px;
+    line-height: 95px;
+  }
+  .sec1 .t1 .tt2 {
+    font-size: 39px;
+    line-height: 60px;
+  }
+  .sec1 .s1swiper-button-prev {
+    left: -5%;
+  }
+  .sec1 .s1swiper-button-next {
+    right: -5%;
+  }
+  .sec2-main {
+    margin-top: -60px;
+  }
+  .sec2-main .left {
+    gap: 20px;
+  }
+  .sec2-main .left .t1 {
+    height: 439px;
+  }
+  .sec2-main .left .t2 {
+    gap: 20px;
+  }
+  .sec2-main .left .t2 .img {
+    height: 318px;
+  }
+  .sec2-main .right {
+    flex: 1 0 50%;
+  }
+  .sec2-main .right .t1 {
+    font-size: 50px;
+    line-height: 70px;
+    transform: translateY(-17px);
+  }
+  .block-categories {
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+  .product-card {
+    width: 280px;
+  }
+  .blog-articles {
+    justify-content: space-evenly;
+  }
+  .footer_main {
+    margin-top: -75px;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .footer_main .t1 {
+    text-align: center;
+  }
+  .footer_main .left,
+  .footer_main .right {
+    flex-direction: row;
+    align-items: initial;
+  }
+  .footer_main .left {
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  .footer_main .left .social {
+    justify-content: center;
+  }
+  .footer_main .right {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer_main .right .contacts_info {
+    margin-bottom: 60px;
+  }
+  .footer-bottom {
+    padding: 20px 0;
+  }
+  .footer-bottom .container {
+    line-height: 25px;
+  }
+  .footer .subscribe_block .img {
+    left: -50px;
+    top: -115px;
+    width: 300px;
+    height: 300px;
+  }
+  header,
+  footer,
+  section,
+  body {
+    width: 100%;
+    overflow-x: hidden;
   }
 }
